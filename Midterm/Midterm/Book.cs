@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//sierra is super cool
+//sierra is super dupper cool
 namespace Midterm
 {
     internal class Book
