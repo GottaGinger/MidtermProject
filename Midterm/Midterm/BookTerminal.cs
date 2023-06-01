@@ -14,7 +14,7 @@ namespace Midterm
             
         }
         static List<Book> books = new List<Book>();
-        public void AddBook(Book book)
+        public static void AddBook(Book book)
         {
             books.Add(book);
 
@@ -83,6 +83,14 @@ namespace Midterm
                     book.DueDate = DateTime.Today.AddDays(14);
                     Console.WriteLine($"\n{book.Title} by {book.Author} has been checked out to you.");
                 }
+                else
+                {
+                    Console.WriteLine("This book has already been checked out.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"\n{title} is not found in the list of books.");
             }
         }
 
