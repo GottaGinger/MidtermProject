@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jerem\\Desktop\\Sierra\\Coding\\C#\\MidtermProject\\Midterm\\Midterm\\Midterm.csproj": {}
+    "C:\\Users\\benme\\Source\\Repos\\MidtermProject3\\Midterm\\Midterm\\Midterm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jerem\\Desktop\\Sierra\\Coding\\C#\\MidtermProject\\Midterm\\Midterm\\Midterm.csproj": {
+    "C:\\Users\\benme\\Source\\Repos\\MidtermProject3\\Midterm\\Midterm\\Midterm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jerem\\Desktop\\Sierra\\Coding\\C#\\MidtermProject\\Midterm\\Midterm\\Midterm.csproj",
+        "projectUniqueName": "C:\\Users\\benme\\Source\\Repos\\MidtermProject3\\Midterm\\Midterm\\Midterm.csproj",
         "projectName": "Midterm",
-        "projectPath": "C:\\Users\\Jerem\\Desktop\\Sierra\\Coding\\C#\\MidtermProject\\Midterm\\Midterm\\Midterm.csproj",
-        "packagesPath": "C:\\Users\\Jerem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jerem\\Desktop\\Sierra\\Coding\\C#\\MidtermProject\\Midterm\\Midterm\\obj\\",
+        "projectPath": "C:\\Users\\benme\\Source\\Repos\\MidtermProject3\\Midterm\\Midterm\\Midterm.csproj",
+        "packagesPath": "C:\\Users\\benme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\benme\\Source\\Repos\\MidtermProject3\\Midterm\\Midterm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jerem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\benme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
