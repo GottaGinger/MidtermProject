@@ -1,0 +1,15 @@
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Midterm.exe
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Midterm.deps.json
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Midterm.runtimeconfig.json
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Midterm.dll
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Midterm.pdb
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.csproj.AssemblyReference.cache
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.AssemblyInfoInputs.cache
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.AssemblyInfo.cs
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.csproj.CoreCompileInputs.cache
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.dll
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\refint\Midterm.dll
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.pdb
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.genruntimeconfig.cache
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\ref\Midterm.dll
