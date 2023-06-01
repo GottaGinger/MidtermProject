@@ -1,7 +1,8 @@
 ﻿
 using Midterm;
+using System.Runtime.CompilerServices;
 
-Book book1 = new Book("To Kill a Mockingbird", "Harper Lee", "Checked Out", DateTime.Now); //due date is two weeks from the checkout date
+Book book1 = new Book("To Kill a Mockingbird", "Harper Lee", "Checked Out", DateTime.Now); //due date is two weeks from the checkout datee
 Book book2 = new Book("1984", "George Orwell", "On Shelf", DateTime.Now);
 Book book3 = new Book("Pride and Prejudice", "Jane Austen", "On Shelf", DateTime.Now);
 Book book4 = new Book("The Catcher in the Rye", "J.D. Salinger", "On Shelf", DateTime.Now);
@@ -26,45 +27,53 @@ BookTerminal.AddBook(book9);
 BookTerminal.AddBook(book10);
 BookTerminal.AddBook(book11);
 BookTerminal.AddBook(book12);
-
-
-while (true)
+bool continueProgram;
+do 
 {
-    Console.WriteLine("Welcome to the Library!");
-    Console.WriteLine("1. Display all books");
-    Console.WriteLine("2. Search by author");
-    Console.WriteLine("3. Search by title keyword");
-    Console.WriteLine("4. Check out a book");
-    Console.WriteLine("5. Return a book");
-    Console.WriteLine("6. Exit");
-    Console.Write("Please enter your choice: ");
-    string choice = Console.ReadLine();
 
-    Console.WriteLine();
 
-    switch (choice)
-    {
-        case "1":
-            BookTerminal.DisplayMenu();
-            break;
-        case "2":
-            BookTerminal.SearchByAuthor();
-            break;
-        case "3":
-            BookTerminal.SearchByTitleKeyWord();
-            break;
-        case "4":
-            BookTerminal.CheckOutBook();
-            break;
-        case "5":
-            BookTerminal.ReturnBook();
-            break;
-        case "6":
-            Console.WriteLine("Thank you for using the Library. Goodbye!");
-            return;
-        default:
-            Console.WriteLine("Invalid choice. Please try again.");
-            break;
-    }
-}
+    
+    
+        Console.WriteLine("Welcome to the Library!");
+        Console.WriteLine("1. Display all books");
+        Console.WriteLine("2. Search by author");
+        Console.WriteLine("3. Search by title keyword");
+        Console.WriteLine("4. Check out a book");
+        Console.WriteLine("5. Return a book");
+        Console.WriteLine("6. Exit");
+        Console.Write("Please enter your choice: ");
+        string choice = Console.ReadLine();
 
+        
+
+        switch (choice)
+        {
+            case "1":
+                BookTerminal.DisplayMenu();
+                break;
+            case "2":
+                BookTerminal.SearchByAuthor();
+                break;
+            case "3":
+                BookTerminal.SearchByTitleKeyWord();
+                break;
+            case "4":
+                BookTerminal.CheckOutBook();
+                break;
+            case "5":
+                BookTerminal.ReturnBook();
+                break;
+            case "6":
+                Console.WriteLine("Thank you for using the Library. Goodbye!");
+                return;
+            default:
+                Console.WriteLine("Invalid choice. Please try again.");
+                break;
+        }
+        Console.WriteLine("Would you like to continue? y/n");
+        string input = Console.ReadLine();
+        continueProgram = (input.ToLower() == "y");
+    
+
+} while (continueProgram);
+ 
