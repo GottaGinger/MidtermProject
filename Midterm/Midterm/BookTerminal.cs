@@ -3,8 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Xml;
+using System.ComponentModel;
 
 namespace Midterm
+
+
+
 {
     internal class BookTerminal : Book
     {
@@ -40,12 +46,12 @@ namespace Midterm
             Console.WriteLine("\nSearch Results:");
             Console.WriteLine("Title\t\tAuthor\t\tStatus\t\tDue Date");
             Console.WriteLine("----------------------------------------------");
-
+            
             foreach (var book in books)
             {
                 if (book.Author.Contains(author, StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}\t{book.DueDate.ToShortDateString()}");
+                    Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}\t{book.DueDate.ToShortDateString}");
                 }
             }
         }
@@ -81,7 +87,7 @@ namespace Midterm
                 {
                     book.Status = "Checked Out";
                     book.DueDate = DateTime.Today.AddDays(14);
-                    Console.WriteLine($"\n{book.Title} by {book.Author} has been checked out to you.");
+                    Console.WriteLine($"\n{book.Title} by {book.Author} has been checked out to you. Your due date is {book.DueDate}");
                 }
                 else
                 {
@@ -118,8 +124,8 @@ namespace Midterm
                 Console.WriteLine($"\n{title} is not found in the list of books.");
             }
         }
-    }
 
-}
+
+
 
 
