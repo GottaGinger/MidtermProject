@@ -2,6 +2,7 @@
 using Midterm;
 using System.Runtime.CompilerServices;
 
+
 Book book1 = new Book("To Kill a Mockingbird", "Harper Lee", "Checked Out", DateTime.Now); //due date is two weeks from the checkout datee
 Book book2 = new Book("1984", "George Orwell", "On Shelf", DateTime.Now);
 Book book3 = new Book("Pride and Prejudice", "Jane Austen", "On Shelf", DateTime.Now);
@@ -27,13 +28,15 @@ BookTerminal.AddBook(book9);
 BookTerminal.AddBook(book10);
 BookTerminal.AddBook(book11);
 BookTerminal.AddBook(book12);
+
+
+
+
+
+
 bool continueProgram;
 do 
 {
-
-
-    
-    
         Console.WriteLine("Welcome to the Library!");
         Console.WriteLine("1. Display all books");
         Console.WriteLine("2. Search by author");
@@ -44,13 +47,14 @@ do
         Console.Write("Please enter your choice: ");
         string choice = Console.ReadLine();
 
-        
+    BookTerminal.SaveBooksToFile("./Assets/DataFiles/BookList.txt");
 
-        switch (choice)
+    switch (choice)
         {
             case "1":
                 BookTerminal.DisplayMenu();
-                break;
+               
+            break;
             case "2":
                 BookTerminal.SearchByAuthor();
                 break;
@@ -59,7 +63,8 @@ do
                 break;
             case "4":
                 BookTerminal.CheckOutBook();
-                break;
+                
+            break;
             case "5":
                 BookTerminal.ReturnBook();
                 break;
@@ -70,10 +75,11 @@ do
                 Console.WriteLine("Invalid choice. Please try again.");
                 break;
         }
+       
         Console.WriteLine("Would you like to continue? y/n");
         string input = Console.ReadLine();
         continueProgram = (input.ToLower() == "y");
-    
-
+      
 } while (continueProgram);
- 
+
+
