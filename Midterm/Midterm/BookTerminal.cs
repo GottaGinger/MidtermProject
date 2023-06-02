@@ -14,10 +14,10 @@ namespace Midterm
 {
     internal class BookTerminal : Book
     {
-        
+
         public BookTerminal(string title, string author, string status, DateTime duedate) : base(title, author, status, duedate)
         {
-            
+
         }
         static List<Book> books = new List<Book>();
         public static void AddBook(Book book)
@@ -46,7 +46,7 @@ namespace Midterm
             Console.WriteLine("\nSearch Results:");
             Console.WriteLine("Title\t\tAuthor\t\tStatus\t\tDue Date");
             Console.WriteLine("----------------------------------------------");
-            
+
             foreach (var book in books)
             {
                 if (book.Author.Contains(author, StringComparison.OrdinalIgnoreCase))
@@ -108,7 +108,7 @@ namespace Midterm
             Book book = books.Find(b => b.Title.Equals(title, StringComparison.OrdinalIgnoreCase));
             if (book != null)
             {
-                if(book.Status == "Checked Out")
+                if (book.Status == "Checked Out")
                 {
                     book.Status = "On Shelf";
                     book.DueDate = DateTime.MinValue;
@@ -124,6 +124,9 @@ namespace Midterm
                 Console.WriteLine($"\n{title} is not found in the list of books.");
             }
         }
+    }
+}
+        
 
 
 

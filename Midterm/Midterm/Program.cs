@@ -35,51 +35,53 @@ BookTerminal.AddBook(book12);
 
 
 bool continueProgram;
-do 
+do
 {
-        Console.WriteLine("Welcome to the Library!");
-        Console.WriteLine("1. Display all books");
-        Console.WriteLine("2. Search by author");
-        Console.WriteLine("3. Search by title keyword");
-        Console.WriteLine("4. Check out a book");
-        Console.WriteLine("5. Return a book");
-        Console.WriteLine("6. Exit");
-        Console.Write("Please enter your choice: ");
-        string choice = Console.ReadLine();
+    Console.WriteLine("Welcome to the Library!");
+    Console.WriteLine("1. Display all books");
+    Console.WriteLine("2. Search by author");
+    Console.WriteLine("3. Search by title keyword");
+    Console.WriteLine("4. Check out a book");
+    Console.WriteLine("5. Return a book");
+    Console.WriteLine("6. Exit");
+    Console.Write("Please enter your choice: ");
+    string choice = Console.ReadLine();
 
-    BookTerminal.SaveBooksToFile("./Assets/DataFiles/BookList.txt");
+
 
     switch (choice)
-        {
-            case "1":
-                BookTerminal.DisplayMenu();
-               
+    {
+        case "1":
+            BookTerminal.DisplayMenu();
+
             break;
-            case "2":
-                BookTerminal.SearchByAuthor();
-                break;
-            case "3":
-                BookTerminal.SearchByTitleKeyWord();
-                break;
-            case "4":
-                BookTerminal.CheckOutBook();
-                
+        case "2":
+            BookTerminal.SearchByAuthor();
             break;
-            case "5":
-                BookTerminal.ReturnBook();
-                break;
-            case "6":
-                Console.WriteLine("Thank you for using the Library. Goodbye!");
-                return;
-            default:
-                Console.WriteLine("Invalid choice. Please try again.");
-                break;
-        }
-       
-        Console.WriteLine("Would you like to continue? y/n");
-        string input = Console.ReadLine();
-        continueProgram = (input.ToLower() == "y");
-      
+        case "3":
+            BookTerminal.SearchByTitleKeyWord();
+            break;
+        case "4":
+            BookTerminal.CheckOutBook();
+
+            break;
+        case "5":
+            BookTerminal.ReturnBook();
+            break;
+        case "6":
+            Console.WriteLine("Thank you for using the Library. Goodbye!");
+            return;
+        default:
+            Console.WriteLine("Invalid choice. Please try again.");
+            break;
+    }
+
+    Console.WriteLine("Would you like to continue? y/n");
+    string input = Console.ReadLine();
+    continueProgram = (input.ToLower() == "y");
+
 } while (continueProgram);
+
+
 
 
