@@ -1,6 +1,8 @@
 ﻿
 using Midterm;
 using System.Runtime.CompilerServices;
+using static System.Reflection.Metadata.BlobBuilder;
+
 
 
 Book book1 = new Book("To Kill a Mockingbird", "Harper Lee", "Checked Out", DateTime.Now); //due date is two weeks from the checkout datee
@@ -83,5 +85,10 @@ do
 } while (continueProgram);
 
 
+ if (continueProgram == false)
+{
+    BookTerminal.SaveBooksToFile("./Assets/DataFiles/BookList.txt");
+    BookTerminal.LoadBooksFromFile("./Assets/DataFiles/BookList.txt");
+}
 
 

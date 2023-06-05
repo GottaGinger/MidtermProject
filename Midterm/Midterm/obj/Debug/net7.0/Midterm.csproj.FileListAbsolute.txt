@@ -28,4 +28,6 @@ C:\Users\benme\Source\Repos\MidtermProject3\Midterm\Midterm\obj\Debug\net7.0\ref
 C:\Users\benme\Source\Repos\MidtermProject3\Midterm\Midterm\obj\Debug\net7.0\Midterm.pdb
 C:\Users\benme\Source\Repos\MidtermProject3\Midterm\Midterm\obj\Debug\net7.0\Midterm.genruntimeconfig.cache
 C:\Users\benme\Source\Repos\MidtermProject3\Midterm\Midterm\obj\Debug\net7.0\ref\Midterm.dll
-C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Assests\DataFiles\BookList.txt
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\obj\Debug\net7.0\Midterm.csproj.CopyComplete
+C:\Users\Jerem\Desktop\Sierra\Coding\C#\MidtermProject\Midterm\Midterm\bin\Debug\net7.0\Assets\DataFiles\BookList.txt
