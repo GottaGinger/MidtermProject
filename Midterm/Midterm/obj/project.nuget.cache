@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zMwN7r6CrN/Iqko4CzHB8QNeij5lTNNxlYgBJi//Oo3UpM2xTaEhnr6hY8r5Aqze+1ua0iycIsL67dTfAgikIg==",
+  "dgSpecHash": "dlz72OKUe4WUfw8dVRRzBoj9OjO56UYAL0oacnFpeGbl8W3AANn+8Fp0Ch7pXaA8scKQtcm9/MDZM70UnC3J0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jerem\\Desktop\\Sierra\\Coding\\C#\\MidtermProject\\Midterm\\Midterm\\Midterm.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Jerem\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
