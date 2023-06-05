@@ -8,13 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assests\DataFiles\BookList.txt" />
+    <Compile Remove="Assests\**" />
+    <EmbeddedResource Remove="Assests\**" />
+    <None Remove="Assests\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assests\DataFiles\BookList.txt">
+    <None Remove="Assets\DataFiles\BookList.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\DataFiles\BookList.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

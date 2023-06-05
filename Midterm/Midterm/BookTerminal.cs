@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Xml;
 using System.ComponentModel;
+using Newtonsoft.Json;
 
 namespace Midterm
 
@@ -124,8 +125,45 @@ namespace Midterm
                 Console.WriteLine($"\n{title} is not found in the list of books.");
             }
         }
+
+        public static void SaveBooksToFile(string filePath)
+
+        {
+           
+
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+
+                foreach (var book in books)
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    string json = JsonConvert.SerializeObject(book);
+                    writer.WriteLine(json);
+
+
+                }
+            }
+        }
+
+        public static void LoadBooksFromFile(string filePath)
+        {
+            
+            using (StreamReader reader = new StreamReader(filePath))
+            {
+                while (reader.ReadLine() != null)
+                {
+                    if (File.Exists(filePath))
+                    {
+                        string json = File.ReadAllText(filePath);
+                        books = (List<Book>)JsonConvert.DeserializeObject(json);
+                        reader.ReadLine();
+                    }
+                }
+            }
+        }
     }
 }
+    
         
 
 
