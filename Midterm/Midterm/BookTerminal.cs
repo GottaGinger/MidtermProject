@@ -147,16 +147,18 @@ namespace Midterm
 
         public static void LoadBooksFromFile(string filePath)
         {
-            
+           
             using (StreamReader reader = new StreamReader(filePath))
             {
-                while (reader.ReadLine() != null)
+                string line;
+
+                while ((line = reader.ReadLine()) != null) 
                 {
                     if (File.Exists(filePath))
                     {
-                        string json = File.ReadAllText(filePath);
-                        books = (List<Book>)JsonConvert.DeserializeObject(json);
-                        reader.ReadLine();
+                       
+                        books.Add(JsonConvert.DeserializeObject<Book>(line));
+                       
                     }
                 }
             }

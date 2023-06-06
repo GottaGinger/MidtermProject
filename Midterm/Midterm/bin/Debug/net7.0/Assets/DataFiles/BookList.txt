@@ -1,12 +1,12 @@
-{"Title":"To Kill a Mockingbird","Author":"Harper Lee","Status":"Checked Out","DueDate":"2023-06-05T19:06:49.5367733-04:00"}
-{"Title":"1984","Author":"George Orwell","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522477-04:00"}
-{"Title":"Pride and Prejudice","Author":"Jane Austen","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522569-04:00"}
-{"Title":"The Catcher in the Rye","Author":"J.D. Salinger","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522573-04:00"}
-{"Title":"The Alchemist","Author":"Paulo Coelho","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522576-04:00"}
-{"Title":"The Book Thief","Author":"Markus Zusak","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522579-04:00"}
-{"Title":"The Girl on the Train","Author":"Paula Hawkins","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522582-04:00"}
-{"Title":"Gone Girl","Author":"Gillian Flynn","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522585-04:00"}
-{"Title":"The Color Purple","Author":"Alice Walker","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522588-04:00"}
-{"Title":"The Picture of Dorian Gray","Author":"Oscar Wilde","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522591-04:00"}
-{"Title":"The Hobbit","Author":"J.R.R. Tolkien","Status":"Checked Out","DueDate":"2023-06-05T19:06:49.5522596-04:00"}
-{"Title":"The Handmaids Tale","Author":"Margaret Atwood","Status":"On Shelf","DueDate":"2023-06-05T19:06:49.5522689-04:00"}
+{"Title":"To Kill a Mockingbird","Author":"Harper Lee","Status":"Checked Out","DueDate":"2023-06-05T21:12:25.4791072-04:00"}
+{"Title":"1984","Author":"George Orwell","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906228-04:00"}
+{"Title":"Pride and Prejudice","Author":"Jane Austen","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906297-04:00"}
+{"Title":"The Catcher in the Rye","Author":"J.D. Salinger","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.49063-04:00"}
+{"Title":"The Alchemist","Author":"Paulo Coelho","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906304-04:00"}
+{"Title":"The Book Thief","Author":"Markus Zusak","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906306-04:00"}
+{"Title":"The Girl on the Train","Author":"Paula Hawkins","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906308-04:00"}
+{"Title":"Gone Girl","Author":"Gillian Flynn","Status":"Checked Out","DueDate":"2023-06-19T00:00:00-04:00"}
+{"Title":"The Color Purple","Author":"Alice Walker","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906313-04:00"}
+{"Title":"The Picture of Dorian Gray","Author":"Oscar Wilde","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906315-04:00"}
+{"Title":"The Hobbit","Author":"J.R.R. Tolkien","Status":"Checked Out","DueDate":"2023-06-05T21:12:25.4906317-04:00"}
+{"Title":"The Handmaids Tale","Author":"Margaret Atwood","Status":"On Shelf","DueDate":"2023-06-05T21:12:25.4906319-04:00"}
