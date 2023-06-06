@@ -5,38 +5,42 @@ using static System.Reflection.Metadata.BlobBuilder;
 
 
 
-Book book1 = new Book("To Kill a Mockingbird", "Harper Lee", "Checked Out", DateTime.Now); //due date is two weeks from the checkout datee
-Book book2 = new Book("1984", "George Orwell", "On Shelf", DateTime.Now);
-Book book3 = new Book("Pride and Prejudice", "Jane Austen", "On Shelf", DateTime.Now);
-Book book4 = new Book("The Catcher in the Rye", "J.D. Salinger", "On Shelf", DateTime.Now);
-Book book5 = new Book("The Alchemist", "Paulo Coelho", "On Shelf", DateTime.Now);
-Book book6 = new Book("The Book Thief", "Markus Zusak", "On Shelf", DateTime.Now);
-Book book7 = new Book("The Girl on the Train", "Paula Hawkins", "On Shelf", DateTime.Now);
-Book book8 = new Book("Gone Girl", "Gillian Flynn", "On Shelf", DateTime.Now);
-Book book9 = new Book("The Color Purple", "Alice Walker", "On Shelf", DateTime.Now);
-Book book10 = new Book("The Picture of Dorian Gray", "Oscar Wilde", "On Shelf", DateTime.Now);
-Book book11 = new Book("The Hobbit", "J.R.R. Tolkien", "Checked Out", DateTime.Now);
-Book book12 = new Book("The Handmaids Tale", "Margaret Atwood", "On Shelf", DateTime.Now);
+FileInfo fileInfo = new FileInfo("./Assets/DataFiles/BookList.txt");
 
-BookTerminal.AddBook(book1);
-BookTerminal.AddBook(book2);
-BookTerminal.AddBook(book3);
-BookTerminal.AddBook(book4);
-BookTerminal.AddBook(book5);
-BookTerminal.AddBook(book6);
-BookTerminal.AddBook(book7);
-BookTerminal.AddBook(book8);
-BookTerminal.AddBook(book9);
-BookTerminal.AddBook(book10);
-BookTerminal.AddBook(book11);
-BookTerminal.AddBook(book12);
+if(fileInfo.Length == 0)
+{
+    Book book1 = new Book("To Kill a Mockingbird", "Harper Lee", "Checked Out", DateTime.Now); //due date is two weeks from the checkout datee  - return book due date
+    Book book2 = new Book("1984", "George Orwell", "On Shelf", DateTime.Now);
+    Book book3 = new Book("Pride and Prejudice", "Jane Austen", "On Shelf", DateTime.Now);
+    Book book4 = new Book("The Catcher in the Rye", "J.D. Salinger", "On Shelf", DateTime.Now);
+    Book book5 = new Book("The Alchemist", "Paulo Coelho", "On Shelf", DateTime.Now);
+    Book book6 = new Book("The Book Thief", "Markus Zusak", "On Shelf", DateTime.Now);
+    Book book7 = new Book("The Girl on the Train", "Paula Hawkins", "On Shelf", DateTime.Now);
+    Book book8 = new Book("Gone Girl", "Gillian Flynn", "On Shelf", DateTime.Now);
+    Book book9 = new Book("The Color Purple", "Alice Walker", "On Shelf", DateTime.Now);
+    Book book10 = new Book("The Picture of Dorian Gray", "Oscar Wilde", "On Shelf", DateTime.Now);
+    Book book11 = new Book("The Hobbit", "J.R.R. Tolkien", "Checked Out", DateTime.Now);
+    Book book12 = new Book("The Handmaids Tale", "Margaret Atwood", "On Shelf", DateTime.Now);
 
+    BookTerminal.AddBook(book1);
+    BookTerminal.AddBook(book2);
+    BookTerminal.AddBook(book3);
+    BookTerminal.AddBook(book4);
+    BookTerminal.AddBook(book5);
+    BookTerminal.AddBook(book6);
+    BookTerminal.AddBook(book7);
+    BookTerminal.AddBook(book8);
+    BookTerminal.AddBook(book9);
+    BookTerminal.AddBook(book10);
+    BookTerminal.AddBook(book11);
+    BookTerminal.AddBook(book12);
+}
+else
+{
+    BookTerminal.LoadBooksFromFile("./Assets/DataFiles/BookList.txt");
+}
 
-
-
-
-
-bool continueProgram;
+    bool continueProgram;
 do
 {
     Console.WriteLine("Welcome to the Library!");
@@ -88,7 +92,7 @@ do
  if (continueProgram == false)
 {
     BookTerminal.SaveBooksToFile("./Assets/DataFiles/BookList.txt");
-    BookTerminal.LoadBooksFromFile("./Assets/DataFiles/BookList.txt");
+    
 }
 
 
