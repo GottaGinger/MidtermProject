@@ -30,12 +30,12 @@ namespace Midterm
         public static void DisplayMenu()
         {
             Console.WriteLine("----- Library Catalog -----");
-            Console.WriteLine("Title\t\tAuthor\t\tStatus\t\tDue Date");
-            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("Title\t\tAuthor\t\tStatus\t");
+            Console.WriteLine("------------------------------------");
 
             foreach (var book in books)
             {
-                Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}\t{book.DueDate.ToShortDateString()}");
+                Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}");
             }
         }
 
@@ -45,14 +45,14 @@ namespace Midterm
             Console.WriteLine("What is the author name?");
             string author = Console.ReadLine();
             Console.WriteLine("\nSearch Results:");
-            Console.WriteLine("Title\t\tAuthor\t\tStatus\t\tDue Date");
+            Console.WriteLine("Title\t\tAuthor\t\tStatus\t");
             Console.WriteLine("----------------------------------------------");
 
             foreach (var book in books)
             {
                 if (book.Author.Contains(author, StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}\t{book.DueDate.ToShortDateString}");
+                    Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}");
                 }
             }
         }
@@ -63,14 +63,14 @@ namespace Midterm
             string titleKeyword = Console.ReadLine();
 
             Console.WriteLine("\nSearch Results:");
-            Console.WriteLine("Title\t\tAuthor\t\tStatus\t\tDue Date");
+            Console.WriteLine("Title\t\tAuthor\t\tStatus\t");
             Console.WriteLine("----------------------------------------------");
 
             foreach (var book in books)
             {
                 if (book.Title.Contains(titleKeyword, StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}\t{book.DueDate.ToShortDateString()}");
+                    Console.WriteLine($"{book.Title}\t{book.Author}\t{book.Status}");
                 }
             }
         }
